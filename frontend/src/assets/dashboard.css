@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+.dashboard{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.dashboard .highlight-red{
+    color:#d44135;
+    font-weight: 700;
+}
+
+.dashboard #left-sidebar{
+    width: 30%;
+    background-color: #0e0e0e;
+    height: 100vh;
+    position: fixed;
+    float: left;
+}
+
+.dashboard .dash-container{
+    padding: 10vh;
+}
+
+.dashboard #left-sidebar #mmb-logo{
+    width: 10vh;
+}
+
+.dashboard #left-sidebar h1:hover{
+    color: #ffe600;
+    cursor: pointer;
+}
+
+.dashboard #left-sidebar p{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10vh;
+    font-size: 1.2em;
+}
+
+.dashboard #left-sidebar .nonhighlight {
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    border: 1.5px solid white;
+    padding: 8px;
+    height: 30px;
+    font-size: 18px;
+    width: calc(80% - 54px);
+    color: white;
+    float: left;
+    margin: unset;
+}
+
+.dashboard #left-sidebar button{
+    height: 49px;
+    width: 49px;
+    display: unset;
+    margin: unset;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+.dashboard #left-sidebar button:hover{
+    cursor: pointer;
+}
+.dashboard #search-img{
+    height: 35px;
+}
+
+.dashboard #main-feed{
+    margin-left: 30%;
+    width: 50%;
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    float: left;
+}
+
+.dashboard #right-sidebar{
+    width: 20%;
+    float: right;
+    min-height: 100%;
+    background-color: #eeeeee;
+    position: fixed;
+    right: 0;
+}
+
+.dashboard #post-submission textarea, article .posteditor textarea{
+    min-width: calc(100% - 3vh);
+    max-width: calc(100% - 3vh);
+    display: block;
+    min-height: 10vh;
+    max-height: 10vh;
+    border-radius: 25px;
+    border: 1px #0e0e0e solid;
+    padding: 15px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#post-submission button, article .posteditor button{
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    background-color: #d44135;
+    float: right;
+    margin: unset;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+#post-submission button:hover, article .posteditor button:hover{
+    cursor: pointer;
+}
+
+#post-submission{
+    height: 180px;
+}
+
+#post-submission button:hover{
+    cursor: pointer;
+}
+
+article{
+    width: calc(100% - 40px);
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article .author{
+    color: black;
+    float: left;
+    width: 50%;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+article .dateTime{
+    color: black;
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+article .post-details{
+    height: 20px;
+    margin: 10px 0 10px 0;
+}
+
+article .body{
+    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+article .post-panel{
+    margin-bottom: 10px;
+    color: #d44135;
+    font-size: 0.9em;
+}
+
+article .post-panel a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+article .posteditor{
+    display: none;
+    width: 100%;
+}
+
+article p{
+    color: grey;
+    font-size: 0.6em;
+    margin: 0 0 0 0;
+}
+
+#right-sidebar #logout{
+    width: 100px;
+    float: right;
+    border-radius: 20px;
+    height: 30px;
+    display: block;
+    background-color: unset;
+    text-transform: uppercase;
+}
+
+#right-sidebar #logout:hover{
+    border: 1.5px #d44135 solid;
+    cursor: pointer;
+}
+
+#right-sidebar .dash-container{
+    padding: 10vh 5vh 10vh 5vh;
+}
+
+#right-sidebar #friend-requests-panel{
+    margin-top: 100px;
+}
+
+#right-sidebar #friend-requests-panel h1{
+    font-size: 1.5em;
+    color: #0e0e0e;
+    width: 100%;
+    border-bottom: 2px #0e0e0e solid;
+    padding-bottom: 10px;
+}
+
+#right-sidebar #friend-requests-panel .fr-box{
+    background-color: white;
+    width: calc(100% - 20px);
+    border-radius: 15px;
+    padding: 10px;
+    height: 35px;
+}
+
+#right-sidebar #friend-requests-panel .fr-box h2{
+    color: black;
+    width: calc(100% - 70px);
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: unset;
+    float: left;
+    height: 100%;
+    line-height: 35px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#right-sidebar #friend-requests-panel .fr-box img{
+    width: 20px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+#right-sidebar #friend-requests-panel .fr-box img:hover{
+    cursor: pointer;
+}
+
+.user-page button{
+    width: 100px;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.user-page button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dashboard #fullpage{
+    width: 70%;
+    margin-left: 30%; 
+    background-color: #e8e8e8; 
+    min-height: 100vh; 
+    float: left;
+}
+
+.author a{
+    text-decoration: none;
+    color: unset;
+}
+
+.author a:hover{
+    text-decoration: underline;
+}
+
+.user-page h1{
+    color: black;
+    border-bottom: 3px black solid;
+    padding-bottom: 10px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.dash-container .result{
+    width: calc(80% - 40px);
+    height: 50px;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+.dash-container .result:hover{
+    background-color: white;
+}
+
+.dash-container .result h2{
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(58, 58, 58);
+}
+
+.dash-container .result a{
+    color: unset;
+    text-decoration: none;
+}
+
+.dash-container .result a:hover{
+    text-decoration: underline;
+}
+
+.user-page h2{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.user-page p{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.fr-box h2:hover{
+    text-decoration: underline;
+}
